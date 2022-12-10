@@ -1,1 +1,19 @@
-<iframe src="https://onedrive.live.com/embed?cid=5AE43031F5588359&resid=5AE43031F5588359%2138168&authkey=AAtPrJ_VeAfuEoA&em=2"></iframe>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redirect Example</title>
+  </head>
+  <body>
+    <h1>Redirecting...</h1>
+    <p>Please wait while you are redirected.</p>
+
+    <script>
+      // 获取URL中的redirect参数
+      const urlParams = new URLSearchParams(window.location.search);
+      const redirect = urlParams.get('redirect');
+
+      // 跳转到指定的网址
+      window.location.replace(redirect);
+    </script>
+  </body>
+</html>
